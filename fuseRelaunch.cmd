@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller_test_isim_beh.exe" -prj "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller_test_beh.prj" "work.LVDS_Controller_test" "work.glbl" 

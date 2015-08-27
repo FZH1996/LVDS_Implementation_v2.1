@@ -1,0 +1,4 @@
+verilog work "LVDS_Output.v"
+verilog work "LVDS_Controller.v"
+verilog work "LVDS_Controller_test.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,31 @@
+Command line:
+   LVDS_Controller_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  2187
+
+Tue Apr 21 11:57:58 2015
+
+
+ Elaboration Time: 0.202801 sec
+
+ Current Memory Usage: 663.437 Meg
+
+ Total Signals          : 113
+ Total Nets             : 108
+ Total Signal Drivers   : 77
+ Total Blocks           : 15
+ Total Primitive Blocks : 11
+ Total Processes        : 175
+ Total Traceable Variables  : 238
+ Total Scalar Nets and Variables : 6027
+Total Line Count : 1006
+Total Line Count : 1006
+Total Line Count : 1006
+
+ Total Simulation Time: 27.9398 sec
+
+ Current Memory Usage: 663.437 Meg
+
+Tue Apr 21 12:09:21 2015
+

@@ -1,0 +1,529 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.56 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.56 secs
+ 
+--> Reading design: LVDS_Controller.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "LVDS_Controller.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "LVDS_Controller"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : LVDS_Controller
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Verilog\LVDS_Implementation_v2.1\LVDS_Output.v" into library work
+Parsing module <LVDS_Output>.
+WARNING:HDLCompiler:751 - "C:\Verilog\LVDS_Implementation_v2.1\LVDS_Output.v" Line 79: Redeclaration of ansi port newPixel is not allowed
+Analyzing Verilog file "C:\Verilog\LVDS_Implementation_v2.1\LVDS_Controller.v" into library work
+Parsing module <LVDS_Controller>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <LVDS_Controller>.
+WARNING:HDLCompiler:1016 - "C:\Verilog\LVDS_Implementation_v2.1\LVDS_Output.v" Line 82: Port CLK0 is not connected to this instance
+
+Elaborating module <LVDS_Output>.
+
+Elaborating module <DCM_SP(CLKFX_DIVIDE=1,CLKFX_MULTIPLY=5)>.
+
+Elaborating module <OBUFDS(IOSTANDARD="LVDS_33")>.
+WARNING:HDLCompiler:413 - "C:\Verilog\LVDS_Implementation_v2.1\LVDS_Output.v" Line 226: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Verilog\LVDS_Implementation_v2.1\LVDS_Output.v" Line 231: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Verilog\LVDS_Implementation_v2.1\LVDS_Output.v" Line 237: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:\Verilog\LVDS_Implementation_v2.1\LVDS_Controller.v" Line 100: Result of 12-bit expression is truncated to fit in 11-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <LVDS_Controller>.
+    Related source file is "C:\Verilog\LVDS_Implementation_v2.1\LVDS_Controller.v".
+    Found 8-bit register for signal <red>.
+    Found 8-bit register for signal <blue>.
+    Found 8-bit register for signal <green>.
+    Found 11-bit register for signal <horizontalTotal>.
+    Found 11-bit adder for signal <horizontalTotal[10]_GND_1_o_add_2_OUT> created at line 100.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  35 D-type flip-flop(s).
+Unit <LVDS_Controller> synthesized.
+
+Synthesizing Unit <LVDS_Output>.
+    Related source file is "C:\Verilog\LVDS_Implementation_v2.1\LVDS_Output.v".
+        htotal = 11'b10110100000
+        hfront = 0
+        hactive = 11'b10100000000
+        vtotal = 10'b1100110111
+        vfront = 0
+        vactive = 10'b1100100000
+        CK1_data = 7'b1100011
+    Found 1-bit register for signal <vsync>.
+    Found 1-bit register for signal <newPixel>.
+    Found 3-bit register for signal <bitSlot>.
+    Found 11-bit register for signal <hcurrent>.
+    Found 10-bit register for signal <vcurrent>.
+    Found 1-bit register for signal <hsync>.
+    Found 10-bit adder for signal <vcurrent[9]_GND_2_o_add_15_OUT> created at line 226.
+    Found 11-bit adder for signal <hcurrent[10]_GND_2_o_add_17_OUT> created at line 231.
+    Found 3-bit adder for signal <bitSlot[2]_GND_2_o_add_20_OUT> created at line 237.
+    Found 8x1-bit Read Only RAM for signal <CK1in>
+    Found 1-bit 7-to-1 multiplexer for signal <Rxin3> created at line 174.
+    Found 1-bit 7-to-1 multiplexer for signal <Rxin2> created at line 175.
+    Found 1-bit 7-to-1 multiplexer for signal <Rxin1> created at line 176.
+    Found 1-bit 7-to-1 multiplexer for signal <Rxin0> created at line 177.
+    Found 11-bit comparator greater for signal <PWR_2_o_INV_1_o> created at line 185
+    Found 10-bit comparator greater for signal <PWR_2_o_INV_2_o> created at line 194
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  27 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <LVDS_Output> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x1-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 4
+ 10-bit adder                                          : 1
+ 11-bit adder                                          : 2
+ 3-bit adder                                           : 1
+# Registers                                            : 10
+ 1-bit register                                        : 3
+ 10-bit register                                       : 1
+ 11-bit register                                       : 2
+ 3-bit register                                        : 1
+ 8-bit register                                        : 3
+# Comparators                                          : 2
+ 10-bit comparator greater                             : 1
+ 11-bit comparator greater                             : 1
+# Multiplexers                                         : 4
+ 1-bit 7-to-1 multiplexer                              : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <LVDS_Controller>.
+The following registers are absorbed into counter <horizontalTotal>: 1 register on signal <horizontalTotal>.
+Unit <LVDS_Controller> synthesized (advanced).
+
+Synthesizing (advanced) Unit <LVDS_Output>.
+The following registers are absorbed into counter <bitSlot>: 1 register on signal <bitSlot>.
+The following registers are absorbed into counter <hcurrent>: 1 register on signal <hcurrent>.
+The following registers are absorbed into counter <vcurrent>: 1 register on signal <vcurrent>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_CK1in> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 1-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <bitSlot>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <CK1in>         |          |
+    -----------------------------------------------------------------------
+Unit <LVDS_Output> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x1-bit single-port distributed Read Only RAM         : 1
+# Counters                                             : 4
+ 10-bit up counter                                     : 1
+ 11-bit up counter                                     : 2
+ 3-bit up counter                                      : 1
+# Registers                                            : 27
+ Flip-Flops                                            : 27
+# Comparators                                          : 2
+ 10-bit comparator greater                             : 1
+ 11-bit comparator greater                             : 1
+# Multiplexers                                         : 4
+ 1-bit 7-to-1 multiplexer                              : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <green_0> in Unit <LVDS_Controller> is equivalent to the following 7 FFs/Latches, which will be removed : <green_1> <green_2> <green_3> <green_4> <green_5> <green_6> <green_7> 
+INFO:Xst:2261 - The FF/Latch <blue_0> in Unit <LVDS_Controller> is equivalent to the following 7 FFs/Latches, which will be removed : <blue_1> <blue_2> <blue_3> <blue_4> <blue_5> <blue_6> <blue_7> 
+INFO:Xst:2261 - The FF/Latch <red_0> in Unit <LVDS_Controller> is equivalent to the following 7 FFs/Latches, which will be removed : <red_1> <red_2> <red_3> <red_4> <red_5> <red_6> <red_7> 
+
+Optimizing unit <LVDS_Controller> ...
+
+Optimizing unit <LVDS_Output> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block LVDS_Controller, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 41
+ Flip-Flops                                            : 41
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : LVDS_Controller.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 158
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 29
+#      LUT2                        : 13
+#      LUT3                        : 6
+#      LUT4                        : 4
+#      LUT5                        : 6
+#      LUT6                        : 33
+#      MUXCY                       : 29
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 41
+#      FD                          : 24
+#      FDR                         : 17
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 7
+#      IBUF                        : 1
+#      IBUFG                       : 1
+#      OBUFDS                      : 5
+# DCMs                             : 1
+#      DCM_SP                      : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              41  out of  54576     0%  
+ Number of Slice LUTs:                   95  out of  27288     0%  
+    Number used as Logic:                95  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     95
+   Number with an unused Flip Flop:      54  out of     95    56%  
+   Number with an unused LUT:             0  out of     95     0%  
+   Number of fully used LUT-FF pairs:    41  out of     95    43%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    218     5%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+u1/newPixel                        | NONE(horizontalTotal_0)| 14    |
+clk_in                             | DCM_SP:CLKFX           | 27    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 20.911ns (Maximum Frequency: 47.822MHz)
+   Minimum input arrival time before clock: 3.681ns
+   Maximum output required time after clock: 5.216ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'u1/newPixel'
+  Clock period: 4.841ns (frequency: 206.577MHz)
+  Total number of paths / destination ports: 311 / 28
+-------------------------------------------------------------------------
+Delay:               4.841ns (Levels of Logic = 3)
+  Source:            horizontalTotal_6 (FF)
+  Destination:       red_0 (FF)
+  Source Clock:      u1/newPixel rising
+  Destination Clock: u1/newPixel rising
+
+  Data Path: horizontalTotal_6 to red_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              8   0.447   1.147  horizontalTotal_6 (horizontalTotal_6)
+     LUT6:I1->O            1   0.203   0.580  horizontalTotal[10]_GND_1_o_equal_6_o<10>_SW0 (N3)
+     LUT6:I5->O            4   0.205   1.048  horizontalTotal[10]_GND_1_o_equal_6_o<10> (horizontalTotal[10]_GND_1_o_equal_6_o)
+     LUT6:I0->O            1   0.203   0.579  _n00451 (_n0045)
+     FDR:R                     0.430          red_0
+    ----------------------------------------
+    Total                      4.841ns (1.488ns logic, 3.353ns route)
+                                       (30.7% logic, 69.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_in'
+  Clock period: 20.911ns (frequency: 47.822MHz)
+  Total number of paths / destination ports: 732 / 30
+-------------------------------------------------------------------------
+Delay:               4.182ns (Levels of Logic = 3)
+  Source:            u1/bitSlot_2 (FF)
+  Destination:       u1/hcurrent_10 (FF)
+  Source Clock:      clk_in rising 5.0X
+  Destination Clock: clk_in rising 5.0X
+
+  Data Path: u1/bitSlot_2 to u1/hcurrent_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             18   0.447   1.278  u1/bitSlot_2 (u1/bitSlot_2)
+     LUT3:I0->O           11   0.205   0.883  u1/GND_2_o_GND_2_o_equal_13_o<2>1_1 (u1/GND_2_o_GND_2_o_equal_13_o<2>1)
+     LUT6:I5->O           10   0.205   0.857  u1/_n00671 (u1/_n0067)
+     LUT6:I5->O            1   0.205   0.000  u1/hcurrent_10_rstpot (u1/hcurrent_10_rstpot)
+     FD:D                      0.102          u1/hcurrent_10
+    ----------------------------------------
+    Total                      4.182ns (1.164ns logic, 3.018ns route)
+                                       (27.8% logic, 72.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'u1/newPixel'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              3.681ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       horizontalTotal_0 (FF)
+  Destination Clock: u1/newPixel rising
+
+  Data Path: reset to horizontalTotal_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.944  reset_IBUF (reset_IBUF)
+     LUT6:I0->O           11   0.203   0.882  Mcount_horizontalTotal_val1 (Mcount_horizontalTotal_val)
+     FDR:R                     0.430          horizontalTotal_0
+    ----------------------------------------
+    Total                      3.681ns (1.855ns logic, 1.826ns route)
+                                       (50.4% logic, 49.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_in'
+  Total number of paths / destination ports: 32 / 10
+-------------------------------------------------------------------------
+Offset:              5.216ns (Levels of Logic = 2)
+  Source:            u1/bitSlot_1 (FF)
+  Destination:       Rxin3_n (PAD)
+  Source Clock:      clk_in rising 5.0X
+
+  Data Path: u1/bitSlot_1 to Rxin3_n
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             19   0.447   1.416  u1/bitSlot_1 (u1/bitSlot_1)
+     LUT6:I1->O            1   0.203   0.579  u1/Mmux_Rxin311 (u1/Rxin3)
+     OBUFDS:I->O               2.571          u1/OBUFDS_Rxin3_inst (Rxin3_p)
+    ----------------------------------------
+    Total                      5.216ns (3.221ns logic, 1.995ns route)
+                                       (61.8% logic, 38.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'u1/newPixel'
+  Total number of paths / destination ports: 16 / 8
+-------------------------------------------------------------------------
+Offset:              4.795ns (Levels of Logic = 2)
+  Source:            red_0 (FF)
+  Destination:       Rxin0_n (PAD)
+  Source Clock:      u1/newPixel rising
+
+  Data Path: red_0 to Rxin0_n
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.447   0.995  red_0 (red_0)
+     LUT5:I0->O            1   0.203   0.579  u1/Mmux_Rxin011 (u1/Rxin0)
+     OBUFDS:I->O               2.571          u1/OBUFDS_Rxin0_inst (Rxin0_p)
+    ----------------------------------------
+    Total                      4.795ns (3.221ns logic, 1.574ns route)
+                                       (67.2% logic, 32.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk_in
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_in         |    4.182|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock u1/newPixel
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+u1/newPixel    |    4.841|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 24.00 secs
+Total CPU time to Xst completion: 24.53 secs
+ 
+--> 
+
+Total memory usage is 260884 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

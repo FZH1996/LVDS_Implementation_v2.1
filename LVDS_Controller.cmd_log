@@ -1,0 +1,119 @@
+xst -intstyle ise -ifn "C:/Verilog/LVDS_Implementation_v2/LVDS_Controller.xst" -ofn "C:/Verilog/LVDS_Implementation_v2/LVDS_Controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-3 LVDS_Controller.ngc LVDS_Controller.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LVDS_Controller_map.ncd LVDS_Controller.ngd LVDS_Controller.pcf 
+par -w -intstyle ise -ol high -mt off LVDS_Controller_map.ncd LVDS_Controller.ncd LVDS_Controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LVDS_Controller.twx LVDS_Controller.ncd -o LVDS_Controller.twr LVDS_Controller.pcf 
+bitgen -intstyle ise -f LVDS_Controller.ut LVDS_Controller.ncd 
+xst -intstyle ise -ifn "C:/Verilog/LVDS_Implementation_v2/LVDS_Controller.xst" -ofn "C:/Verilog/LVDS_Implementation_v2/LVDS_Controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LVDS_Controller_pin.ucf -p xc6slx45-csg324-3 LVDS_Controller.ngc LVDS_Controller.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LVDS_Controller_map.ncd LVDS_Controller.ngd LVDS_Controller.pcf 
+par -w -intstyle ise -ol high -mt off LVDS_Controller_map.ncd LVDS_Controller.ncd LVDS_Controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LVDS_Controller.twx LVDS_Controller.ncd -o LVDS_Controller.twr LVDS_Controller.pcf -ucf LVDS_Controller_pin.ucf 
+bitgen -intstyle ise -f LVDS_Controller.ut LVDS_Controller.ncd 
+xst -intstyle ise -ifn "C:/Verilog/LVDS_Implementation_v2/LVDS_Controller.xst" -ofn "C:/Verilog/LVDS_Implementation_v2/LVDS_Controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LVDS_Controller_pin.ucf -p xc6slx45-csg324-3 LVDS_Controller.ngc LVDS_Controller.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LVDS_Controller_map.ncd LVDS_Controller.ngd LVDS_Controller.pcf 
+par -w -intstyle ise -ol high -mt off LVDS_Controller_map.ncd LVDS_Controller.ncd LVDS_Controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LVDS_Controller.twx LVDS_Controller.ncd -o LVDS_Controller.twr LVDS_Controller.pcf -ucf LVDS_Controller_pin.ucf 
+bitgen -intstyle ise -f LVDS_Controller.ut LVDS_Controller.ncd 
+xst -intstyle ise -ifn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.xst" -ofn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LVDS_Controller_pin.ucf -p xc6slx45-csg324-3 LVDS_Controller.ngc LVDS_Controller.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LVDS_Controller_map.ncd LVDS_Controller.ngd LVDS_Controller.pcf 
+par -w -intstyle ise -ol high -mt off LVDS_Controller_map.ncd LVDS_Controller.ncd LVDS_Controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LVDS_Controller.twx LVDS_Controller.ncd -o LVDS_Controller.twr LVDS_Controller.pcf -ucf LVDS_Controller_pin.ucf 
+xst -intstyle ise -ifn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.xst" -ofn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LVDS_Controller_pin.ucf -p xc6slx45-csg324-3 LVDS_Controller.ngc LVDS_Controller.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LVDS_Controller_map.ncd LVDS_Controller.ngd LVDS_Controller.pcf 
+par -w -intstyle ise -ol high -mt off LVDS_Controller_map.ncd LVDS_Controller.ncd LVDS_Controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LVDS_Controller.twx LVDS_Controller.ncd -o LVDS_Controller.twr LVDS_Controller.pcf -ucf LVDS_Controller_pin.ucf 
+bitgen -intstyle ise -f LVDS_Controller.ut LVDS_Controller.ncd 
+xst -intstyle ise -ifn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.xst" -ofn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LVDS_Controller_pin.ucf -p xc6slx45-csg324-3 LVDS_Controller.ngc LVDS_Controller.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LVDS_Controller_map.ncd LVDS_Controller.ngd LVDS_Controller.pcf 
+par -w -intstyle ise -ol high -mt off LVDS_Controller_map.ncd LVDS_Controller.ncd LVDS_Controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LVDS_Controller.twx LVDS_Controller.ncd -o LVDS_Controller.twr LVDS_Controller.pcf -ucf LVDS_Controller_pin.ucf 
+bitgen -intstyle ise -f LVDS_Controller.ut LVDS_Controller.ncd 
+xst -intstyle ise -ifn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.xst" -ofn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.syr" 
+xst -intstyle ise -ifn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.xst" -ofn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.syr" 
+xst -intstyle ise -ifn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.xst" -ofn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LVDS_Controller_pin.ucf -p xc6slx45-csg324-3 LVDS_Controller.ngc LVDS_Controller.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LVDS_Controller_pin.ucf -p xc6slx45-csg324-3 LVDS_Controller.ngc LVDS_Controller.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LVDS_Controller_map.ncd LVDS_Controller.ngd LVDS_Controller.pcf 
+par -w -intstyle ise -ol high -mt off LVDS_Controller_map.ncd LVDS_Controller.ncd LVDS_Controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LVDS_Controller.twx LVDS_Controller.ncd -o LVDS_Controller.twr LVDS_Controller.pcf -ucf LVDS_Controller_pin.ucf 
+bitgen -intstyle ise -f LVDS_Controller.ut LVDS_Controller.ncd 
+xst -intstyle ise -ifn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.xst" -ofn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LVDS_Controller_pin.ucf -p xc6slx45-csg324-3 LVDS_Controller.ngc LVDS_Controller.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LVDS_Controller_map.ncd LVDS_Controller.ngd LVDS_Controller.pcf 
+par -w -intstyle ise -ol high -mt off LVDS_Controller_map.ncd LVDS_Controller.ncd LVDS_Controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LVDS_Controller.twx LVDS_Controller.ncd -o LVDS_Controller.twr LVDS_Controller.pcf -ucf LVDS_Controller_pin.ucf 
+bitgen -intstyle ise -f LVDS_Controller.ut LVDS_Controller.ncd 
+xst -intstyle ise -ifn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.xst" -ofn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.syr" 
+xst -intstyle ise -ifn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.xst" -ofn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LVDS_Controller_pin.ucf -p xc6slx45-csg324-3 LVDS_Controller.ngc LVDS_Controller.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LVDS_Controller_map.ncd LVDS_Controller.ngd LVDS_Controller.pcf 
+par -w -intstyle ise -ol high -mt off LVDS_Controller_map.ncd LVDS_Controller.ncd LVDS_Controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LVDS_Controller.twx LVDS_Controller.ncd -o LVDS_Controller.twr LVDS_Controller.pcf -ucf LVDS_Controller_pin.ucf 
+bitgen -intstyle ise -f LVDS_Controller.ut LVDS_Controller.ncd 
+xst -intstyle ise -ifn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.xst" -ofn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LVDS_Controller_pin.ucf -p xc6slx45-csg324-3 LVDS_Controller.ngc LVDS_Controller.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LVDS_Controller_map.ncd LVDS_Controller.ngd LVDS_Controller.pcf 
+par -w -intstyle ise -ol high -mt off LVDS_Controller_map.ncd LVDS_Controller.ncd LVDS_Controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LVDS_Controller.twx LVDS_Controller.ncd -o LVDS_Controller.twr LVDS_Controller.pcf -ucf LVDS_Controller_pin.ucf 
+xst -intstyle ise -ifn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.xst" -ofn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LVDS_Controller_pin.ucf -p xc6slx45-csg324-3 LVDS_Controller.ngc LVDS_Controller.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LVDS_Controller_map.ncd LVDS_Controller.ngd LVDS_Controller.pcf 
+par -w -intstyle ise -ol high -mt off LVDS_Controller_map.ncd LVDS_Controller.ncd LVDS_Controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LVDS_Controller.twx LVDS_Controller.ncd -o LVDS_Controller.twr LVDS_Controller.pcf -ucf LVDS_Controller_pin.ucf 
+bitgen -intstyle ise -f LVDS_Controller.ut LVDS_Controller.ncd 
+xst -intstyle ise -ifn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.xst" -ofn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LVDS_Controller_pin.ucf -p xc6slx45-csg324-3 LVDS_Controller.ngc LVDS_Controller.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LVDS_Controller_map.ncd LVDS_Controller.ngd LVDS_Controller.pcf 
+par -w -intstyle ise -ol high -mt off LVDS_Controller_map.ncd LVDS_Controller.ncd LVDS_Controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LVDS_Controller.twx LVDS_Controller.ncd -o LVDS_Controller.twr LVDS_Controller.pcf -ucf LVDS_Controller_pin.ucf 
+bitgen -intstyle ise -f LVDS_Controller.ut LVDS_Controller.ncd 
+xst -intstyle ise -ifn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.xst" -ofn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LVDS_Controller_pin.ucf -p xc6slx45-csg324-3 LVDS_Controller.ngc LVDS_Controller.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LVDS_Controller_map.ncd LVDS_Controller.ngd LVDS_Controller.pcf 
+par -w -intstyle ise -ol high -mt off LVDS_Controller_map.ncd LVDS_Controller.ncd LVDS_Controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LVDS_Controller.twx LVDS_Controller.ncd -o LVDS_Controller.twr LVDS_Controller.pcf -ucf LVDS_Controller_pin.ucf 
+bitgen -intstyle ise -f LVDS_Controller.ut LVDS_Controller.ncd 
+xst -intstyle ise -ifn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.xst" -ofn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LVDS_Controller_pin.ucf -p xc6slx45-csg324-3 LVDS_Controller.ngc LVDS_Controller.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LVDS_Controller_map.ncd LVDS_Controller.ngd LVDS_Controller.pcf 
+par -w -intstyle ise -ol high -mt off LVDS_Controller_map.ncd LVDS_Controller.ncd LVDS_Controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LVDS_Controller.twx LVDS_Controller.ncd -o LVDS_Controller.twr LVDS_Controller.pcf -ucf LVDS_Controller_pin.ucf 
+bitgen -intstyle ise -f LVDS_Controller.ut LVDS_Controller.ncd 
+xst -intstyle ise -ifn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.xst" -ofn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LVDS_Controller_pin.ucf -p xc6slx45-csg324-3 LVDS_Controller.ngc LVDS_Controller.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LVDS_Controller_map.ncd LVDS_Controller.ngd LVDS_Controller.pcf 
+par -w -intstyle ise -ol high -mt off LVDS_Controller_map.ncd LVDS_Controller.ncd LVDS_Controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LVDS_Controller.twx LVDS_Controller.ncd -o LVDS_Controller.twr LVDS_Controller.pcf -ucf LVDS_Controller_pin.ucf 
+bitgen -intstyle ise -f LVDS_Controller.ut LVDS_Controller.ncd 
+xst -intstyle ise -ifn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.xst" -ofn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LVDS_Controller_pin.ucf -p xc6slx45-csg324-3 LVDS_Controller.ngc LVDS_Controller.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LVDS_Controller_map.ncd LVDS_Controller.ngd LVDS_Controller.pcf 
+par -w -intstyle ise -ol high -mt off LVDS_Controller_map.ncd LVDS_Controller.ncd LVDS_Controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LVDS_Controller.twx LVDS_Controller.ncd -o LVDS_Controller.twr LVDS_Controller.pcf -ucf LVDS_Controller_pin.ucf 
+xst -intstyle ise -ifn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.xst" -ofn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LVDS_Controller_pin.ucf -p xc6slx45-csg324-3 LVDS_Controller.ngc LVDS_Controller.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LVDS_Controller_map.ncd LVDS_Controller.ngd LVDS_Controller.pcf 
+par -w -intstyle ise -ol high -mt off LVDS_Controller_map.ncd LVDS_Controller.ncd LVDS_Controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LVDS_Controller.twx LVDS_Controller.ncd -o LVDS_Controller.twr LVDS_Controller.pcf -ucf LVDS_Controller_pin.ucf 
+bitgen -intstyle ise -f LVDS_Controller.ut LVDS_Controller.ncd 
+xst -intstyle ise -ifn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.xst" -ofn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LVDS_Controller_pin.ucf -p xc6slx45-csg324-3 LVDS_Controller.ngc LVDS_Controller.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LVDS_Controller_map.ncd LVDS_Controller.ngd LVDS_Controller.pcf 
+par -w -intstyle ise -ol high -mt off LVDS_Controller_map.ncd LVDS_Controller.ncd LVDS_Controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LVDS_Controller.twx LVDS_Controller.ncd -o LVDS_Controller.twr LVDS_Controller.pcf -ucf LVDS_Controller_pin.ucf 
+bitgen -intstyle ise -f LVDS_Controller.ut LVDS_Controller.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LVDS_Controller_pin.ucf -p xc6slx45-csg324-3 LVDS_Controller.ngc LVDS_Controller.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LVDS_Controller_map.ncd LVDS_Controller.ngd LVDS_Controller.pcf 
+par -w -intstyle ise -ol high -mt off LVDS_Controller_map.ncd LVDS_Controller.ncd LVDS_Controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LVDS_Controller.twx LVDS_Controller.ncd -o LVDS_Controller.twr LVDS_Controller.pcf -ucf LVDS_Controller_pin.ucf 
+xst -intstyle ise -ifn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.xst" -ofn "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LVDS_Controller_pin.ucf -p xc6slx45-csg324-3 LVDS_Controller.ngc LVDS_Controller.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LVDS_Controller_map.ncd LVDS_Controller.ngd LVDS_Controller.pcf 
+par -w -intstyle ise -ol high -mt off LVDS_Controller_map.ncd LVDS_Controller.ncd LVDS_Controller.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LVDS_Controller.twx LVDS_Controller.ncd -o LVDS_Controller.twr LVDS_Controller.pcf -ucf LVDS_Controller_pin.ucf 
+bitgen -intstyle ise -f LVDS_Controller.ut LVDS_Controller.ncd 

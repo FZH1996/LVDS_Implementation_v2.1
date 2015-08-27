@@ -1,0 +1,71 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml LVDS_Controller.twx LVDS_Controller.ncd -o
+LVDS_Controller.twr LVDS_Controller.pcf -ucf LVDS_Controller_pin.ucf
+
+Design file:              LVDS_Controller.ncd
+Physical constraint file: LVDS_Controller.pcf
+Device,package,speed:     xc6slx45,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock clk_in to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+CK1in_n     |        12.291(R)|      SLOW  |         6.721(R)|      FAST  |u1/clk_bit_BUFG   |   0.000|
+CK1in_p     |        12.249(R)|      SLOW  |         6.705(R)|      FAST  |u1/clk_bit_BUFG   |   0.000|
+Rxin0_n     |        11.611(R)|      SLOW  |         6.238(R)|      FAST  |u1/clk_bit_BUFG   |   0.000|
+Rxin0_p     |        11.569(R)|      SLOW  |         6.222(R)|      FAST  |u1/clk_bit_BUFG   |   0.000|
+Rxin1_n     |        11.378(R)|      SLOW  |         6.216(R)|      FAST  |u1/clk_bit_BUFG   |   0.000|
+Rxin1_p     |        11.336(R)|      SLOW  |         6.200(R)|      FAST  |u1/clk_bit_BUFG   |   0.000|
+Rxin2_n     |        12.033(R)|      SLOW  |         6.216(R)|      FAST  |u1/clk_bit_BUFG   |   0.000|
+Rxin2_p     |        11.991(R)|      SLOW  |         6.200(R)|      FAST  |u1/clk_bit_BUFG   |   0.000|
+Rxin3_n     |        11.652(R)|      SLOW  |         6.300(R)|      FAST  |u1/clk_bit_BUFG   |   0.000|
+Rxin3_p     |        11.610(R)|      SLOW  |         6.284(R)|      FAST  |u1/clk_bit_BUFG   |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk_in
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_in         |    4.035|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Tue May 12 21:12:59 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 263 MB
+
+
+

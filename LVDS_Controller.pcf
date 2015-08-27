@@ -1,0 +1,19 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue May 12 21:12:06 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Rxin0_n" LOCATE = SITE "T11" LEVEL 1;
+COMP "Rxin0_p" LOCATE = SITE "R11" LEVEL 1;
+COMP "Rxin1_n" LOCATE = SITE "N11" LEVEL 1;
+COMP "Rxin1_p" LOCATE = SITE "M11" LEVEL 1;
+COMP "Rxin2_n" LOCATE = SITE "V13" LEVEL 1;
+COMP "Rxin2_p" LOCATE = SITE "U13" LEVEL 1;
+COMP "Rxin3_n" LOCATE = SITE "V15" LEVEL 1;
+COMP "Rxin3_p" LOCATE = SITE "U15" LEVEL 1;
+COMP "CK1in_n" LOCATE = SITE "V16" LEVEL 1;
+COMP "CK1in_p" LOCATE = SITE "U16" LEVEL 1;
+COMP "reset" LOCATE = SITE "P3" LEVEL 1;
+COMP "clk_in" LOCATE = SITE "L15" LEVEL 1;
+SCHEMATIC END;
+

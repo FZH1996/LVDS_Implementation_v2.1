@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Verilog\LVDS_Implementation_v2.1\LVDS_Controller.ncd
+OUTFILE=C:\Verilog\LVDS_Implementation_v2.1\LVDS_Controller.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=C:\Verilog\LVDS_Implementation_v2.1
+LICENSE=WebPack
+USER_INFO=210868918_0_0_973

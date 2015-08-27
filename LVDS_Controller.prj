@@ -1,0 +1,2 @@
+verilog work "LVDS_Output.v"
+verilog work "LVDS_Controller.v"

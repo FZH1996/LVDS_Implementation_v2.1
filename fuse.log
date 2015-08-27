@@ -1,0 +1,29 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller_test_isim_beh.exe -prj C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller_test_beh.prj work.LVDS_Controller_test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Output.v" into library work
+WARNING:HDLCompiler:751 - "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Output.v" Line 79: Redeclaration of ansi port newPixel is not allowed
+Analyzing Verilog file "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller.v" into library work
+Analyzing Verilog file "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller_test.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Verilog/LVDS_Implementation_v2.1/LVDS_Output.v" Line 82: Port CLK0 is not connected to this instance
+Completed static elaboration
+Compiling module dcm_sp_clock_divide_by_2
+Compiling module dcm_sp_maximum_period_check(cloc...
+Compiling module dcm_sp_maximum_period_check(cloc...
+Compiling module dcm_sp_clock_lost
+Compiling module DCM_SP(CLKFX_MULTIPLY=5)
+Compiling module OBUFDS(IOSTANDARD="LVDS_33")
+Compiling module LVDS_Output
+Compiling module LVDS_Controller
+Compiling module LVDS_Controller_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 3 sub-compilation(s) to finish...
+Compiled 10 Verilog Units
+Built simulation executable C:/Verilog/LVDS_Implementation_v2.1/LVDS_Controller_test_isim_beh.exe
+Fuse Memory Usage: 32324 KB
+Fuse CPU Usage: 1762 ms
